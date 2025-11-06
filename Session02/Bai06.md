@@ -1,0 +1,7 @@
+Yếu tố môi trường	                    Mô tả / Ví dụ	                                                                          Tác động đến yêu cầu kỹ thuật
+Người dùng (Users)	  |  Bác sĩ, y tá, nhân viên tiếp nhận, quản trị viên, bệnh nhân.	 |      Cần giao diện thân thiện, đa vai trò, phân quyền truy cập khác nhau (bác sĩ xem hồ sơ, lễ tân nhập dữ liệu...).
+Phần cứng (Hardware)  |  Máy chủ, máy tính tại quầy, thiết bị y tế kết nối (máy đo, xét nghiệm).  |    Hệ thống phải tương thích nhiều loại thiết bị và hỗ trợ kết nối dữ liệu y tế (IoT, cảm biến).
+Phần mềm (Software)   |  Hệ điều hành, phần mềm quản lý xét nghiệm, quản lý viện phí.              |   Cần khả năng tích hợp với phần mềm khác (qua API, HL7, FHIR...).
+Hệ thống bên ngoài    |  Cơ sở dữ liệu bảo hiểm y tế, hệ thống thanh toán, cổng báo cáo Bộ Y tế. |  Yêu cầu bảo mật, đồng bộ dữ liệu, và tuân thủ chuẩn trao đổi dữ liệu liên ngành.
+Quy trình nghiệp vụ   |  Tiếp nhận bệnh nhân → Khám → Xét nghiệm → Điều trị → Thanh toán → Xuất viện.  | Phần mềm phải hỗ trợ đúng quy trình thực tế, đảm bảo luồng xử lý logic, không bỏ sót bước.
+Luật lệ và quy định   |  Luật bảo mật thông tin y tế, quy định về hồ sơ bệnh án điện tử, chuẩn an toàn dữ liệu. | Hệ thống cần mã hóa thông tin bệnh nhân, quản lý quyền truy cập, và lưu trữ dữ liệu đúng quy định pháp lý.  
