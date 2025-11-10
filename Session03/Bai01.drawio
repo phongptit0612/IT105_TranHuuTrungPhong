@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram name="Page-1" id="GR9iMu9Ed7zKh6-mjG3o">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-1" value="User" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Ry4E4ryxiK9vp-n_dMTD-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="170" as="sourcePoint" />
+            <mxPoint x="420" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-3" value="View Movies Detail" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-6" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="260" as="sourcePoint" />
+            <mxPoint x="400" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-9" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="260" as="sourcePoint" />
+            <mxPoint x="440" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-10" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="250" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-11" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="260" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="320" as="sourcePoint" />
+            <mxPoint x="360" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-13" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="320" as="sourcePoint" />
+            <mxPoint x="480" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-14" value="Watch Trailer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-15" value="View Comments" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ry4E4ryxiK9vp-n_dMTD-16" value="&lt;li data-start=&quot;724&quot; data-end=&quot;767&quot;&gt;&lt;p data-start=&quot;726&quot; data-end=&quot;767&quot;&gt;&lt;strong data-start=&quot;726&quot; data-end=&quot;748&quot;&gt;View Movie Details&lt;/strong&gt; là use case chính.&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-start=&quot;768&quot; data-end=&quot;900&quot;&gt;&lt;br/&gt;&lt;p data-start=&quot;770&quot; data-end=&quot;900&quot;&gt;&lt;strong data-start=&quot;770&quot; data-end=&quot;787&quot;&gt;Watch Trailer&lt;/strong&gt; và &lt;strong data-start=&quot;791&quot; data-end=&quot;808&quot;&gt;View Comments&lt;/strong&gt; là các chức năng phụ, được mở rộng bằng &lt;strong data-start=&quot;849&quot; data-end=&quot;864&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/strong&gt; vì luôn cần gọi từ chức năng chính.&lt;/p&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-start=&quot;901&quot; data-end=&quot;994&quot;&gt;&lt;br/&gt;&lt;p data-start=&quot;903&quot; data-end=&quot;994&quot;&gt;User chỉ tương tác trực tiếp với chức năng chính, còn các chức năng phụ được gọi bên trong.&lt;/p&gt;&lt;/li&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="25" width="150" height="330" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
