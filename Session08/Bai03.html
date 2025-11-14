@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lọc Sản Phẩm</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f7f9;
+            padding: 20px;
+        }
+
+        .filter-container {
+            background: #fff;
+            width: 300px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h3 {
+            margin-top: 0;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 14px;
+        }
+
+        .price-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            margin-top: 6px;
+        }
+
+        .btn-filter {
+            background: #0066cc;
+            color: white;
+        }
+
+        .btn-filter:hover {
+            background: #0052a3;
+        }
+
+        .btn-clear {
+            background: #eee;
+            color: #333;
+        }
+
+        .btn-clear:hover {
+            background: #ddd;
+        }
+
+        /* Responsive cho mobile: filter dạng full-width */
+        @media (max-width: 480px) {
+            .filter-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="filter-container">
+        <h3>🧩 Bộ lọc sản phẩm</h3>
+
+        <!-- Category -->
+        <label for="category">Danh mục</label>
+        <select id="category">
+            <option value="">-- Chọn danh mục --</option>
+            <option>Quần áo</option>
+            <option>Điện tử</option>
+            <option>Sách</option>
+            <option>Đồ gia dụng</option>
+        </select>
+
+        <!-- Price -->
+        <label>Khoảng giá</label>
+        <div class="price-row">
+            <input type="number" placeholder="Từ" min="0">
+            <input type="number" placeholder="Đến" min="0">
+        </div>
+
+        <!-- Sort option -->
+        <label for="sort">Sắp xếp theo</label>
+        <select id="sort">
+            <option value="">-- Chọn tiêu chí --</option>
+            <option>Giá tăng dần</option>
+            <option>Giá giảm dần</option>
+            <option>Bán chạy nhất</option>
+            <option>Mới nhất</option>
+        </select>
+
+        <!-- Buttons -->
+        <button class="btn btn-filter">Lọc</button>
+        <button class="btn btn-clear">❌ Xóa lọc</button>
+    </div>
+
+</body>
+
+</html>

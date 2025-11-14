@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Đơn Hàng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-xl font-semibold mb-4">Danh sách đơn hàng</h2>
+
+        <table class="w-full border-collapse">
+            <thead>
+                <tr class="bg-gray-200 text-left">
+                    <th class="p-3 border">STT</th>
+                    <th class="p-3 border">Mã đơn</th>
+                    <th class="p-3 border">Tên khách</th>
+                    <th class="p-3 border">Trạng thái</th>
+                    <th class="p-3 border text-center">Chi tiết</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="hover:bg-gray-50">
+                    <td class="p-3 border">1</td>
+                    <td class="p-3 border">DH001</td>
+                    <td class="p-3 border">Nguyễn Văn A</td>
+                    <td class="p-3 border">
+                        <span class="px-2 py-1 text-sm rounded bg-yellow-100 text-yellow-700">
+                            Đang xử lý
+                        </span>
+                    </td>
+                    <td class="p-3 border text-center">
+                        <button class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                            Xem
+                        </button>
+                    </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50">
+                    <td class="p-3 border">2</td>
+                    <td class="p-3 border">DH002</td>
+                    <td class="p-3 border">Trần Thị B</td>
+                    <td class="p-3 border">
+                        <span class="px-2 py-1 text-sm rounded bg-green-100 text-green-700">
+                            Hoàn thành
+                        </span>
+                    </td>
+                    <td class="p-3 border text-center">
+                        <button class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                            Xem
+                        </button>
+                    </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50">
+                    <td class="p-3 border">3</td>
+                    <td class="p-3 border">DH003</td>
+                    <td class="p-3 border">Lê Văn C</td>
+                    <td class="p-3 border">
+                        <span class="px-2 py-1 text-sm rounded bg-red-100 text-red-700">
+                            Hủy
+                        </span>
+                    </td>
+                    <td class="p-3 border text-center">
+                        <button class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                            Xem
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="flex justify-between items-center mt-4">
+            <button class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 transition">
+                Trang trước
+            </button>
+
+            <span class="text-gray-600">Trang 1 / 5</span>
+
+            <button class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 transition">
+                Trang sau
+            </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

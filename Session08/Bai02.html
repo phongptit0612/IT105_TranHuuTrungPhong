@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập hệ thống</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .login-container {
+        background: #ffffff;
+        padding: 32px;
+        width: 360px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        margin-top: 0;
+        text-align: center;
+        font-weight: 600;
+        color: #333;
+    }
+
+    label {
+        font-weight: 600;
+        margin-bottom: 6px;
+        display: block;
+        color: #333;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 6px 0 14px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    .row a {
+        color: #0066cc;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .row a:hover {
+        text-decoration: underline;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        background: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    button:hover {
+        background: #0052a3;
+    }
+
+    /* Responsive cho mobile */
+    @media (max-width: 480px) {
+        .login-container {
+            width: 90%;
+            padding: 24px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Đăng nhập</h2>
+
+    <form>
+        <label>Email</label>
+        <input type="email" placeholder="example@student.edu.vn" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Nhập mật khẩu" required>
+
+        <div class="row">
+            <label>
+                <input type="checkbox"> Nhớ tôi
+            </label>
+            <a href="#">Quên mật khẩu?</a>
+        </div>
+
+        <button type="submit">Đăng nhập</button>
+    </form>
+</div>
+
+</body>
+</html>
