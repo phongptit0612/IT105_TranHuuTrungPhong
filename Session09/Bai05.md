@@ -1,0 +1,4 @@
+              Tình huống	                         Thực thể liên quan	                         Loại quan hệ	                               Giải thích
+    Một sinh viên có một mã sinh viên duy nhất       Student – StudentID                        1 – 1 (One to One)              Mỗi sinh viên chỉ có một mã, và mỗi mã chỉ thuộc về đúng một sinh viên.
+    Một khách hàng có thể đặt nhiều đơn hàng         Customer – Order                           1 – N (One to Many)        Một khách hàng có thể tạo ra nhiều đơn hàng, nhưng mỗi đơn hàng chỉ thuộc Kh duy nhat
+    Một sinh viên có thể học nhiều môn học, và mỗi môn học có nhiều sinh viên | Student – Course | N – N (Many to Many)  |  Một sinh viên đăng ký nhiều môn; một môn có nhiều sinh viên. Cần bảng trung gian Enrollment.
